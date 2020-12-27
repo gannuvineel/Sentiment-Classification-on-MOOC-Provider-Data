@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Classification on Coursera Reviews</title>
+</head>
+
+<body style="background-color: #F0F8FF;">
+ <h1 style="text-align:center; margin-top: 4rem; color:#325C74;">Sentiment Classification on MOOC Provider Data</h1>
+ <div style="float:left; width:50%;">
+    <form action="{{ url_for('predict')}}" method="post" style="margin-top: 12rem; margin-left: 5rem; text-align:center;">
+      <h4 style="color: #383838;">Please enter a review to classify its sentiment</h4>
+      <textarea type="text" name="review" placeholder="Enter a review" required="required" style="width:450px; height:200px"></textarea><br>
+      <button type="submit" style="margin-top:1.5rem;" onclick="displayContent()">Predict</button>
+    </form>
+   <br>
+   <br>
+ </div>
+
+ <div style="text-align:center;" class="content">
+  <img src="{{ graph }}" id="graphimage" alt="my plot" onerror="this.style.display='none'" style="width:30rem; height:20rem; margin-top: 8rem; margin-left: 6rem;" >
+  <div style="float:center; text-align:center; margin-top:2.5rem; margin-left:50rem;">  
+  
+  {% autoescape false %}  
+  {{ prediction_text }}
+  {% endautoescape %}
+  </div> 
+ </div>
+
+</body>
+</html>

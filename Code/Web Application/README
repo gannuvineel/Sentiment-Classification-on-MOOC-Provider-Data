@@ -1,0 +1,21 @@
+The folder contains the following files/folders.
+
+app.yaml - Supporting file for Google Cloud Platform deployment
+
+main.py - Backend python code to predict the input review
+
+model.h5 - The pickled model used for classification
+
+requirements.txt - Supporting file for Google Cloud Platform deployment
+
+static - Folder
+
+graph -	Sub-folder of static
+
+graph.png - Graph image in the 'graph' folder that is displayed when the user enters review and clicks the Predict button (Updates for every review)
+
+templates - Folder
+
+maincontent.html - HTML file in the 'templates' folder used as a user interface for the web application
+
+tokenizer.pickle - The pickled tokenizer variable used for predicting the reviews

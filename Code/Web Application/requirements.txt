@@ -1,0 +1,7 @@
+pandas==1.0.2
+numpy==1.18.1
+tensorflow==2.0.0
+Flask==1.1.1
+matplotlib>=1.4.3
+h5py<3.0.0
+google-cloud-storage==1.33.0
